@@ -1,0 +1,8 @@
+<h1><%= @movie.title %></h1>
+
+<p><strong>Description:</strong> <%= @movie.description %></p>
+<p><strong>Year:</strong> <%= @movie.year %></p>
+<p><strong>Duration:</strong> <%= @movie.duration %> minutes</p>
+<p><strong>Director:</strong> <a href="/directors/<%= @movie.director_id %>"><%= @movie.director.name %></a></p>
+
+<a href="/movies">Back to movies</a>
